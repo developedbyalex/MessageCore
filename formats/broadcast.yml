@@ -1,0 +1,8 @@
+broadcast:  
+  formats:
+    'basic':
+      avatar: true
+      actions:
+        - '[MESSAGE] <n><green>Hello %player_name%</green><n><green>'
+        - '[SOUND] BLOCK_ANVIL_BREAK'
+        - '[FIREWORK] fireworkPreset1'

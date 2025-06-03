@@ -1,0 +1,25 @@
+# ______            _     ___  ___                                    
+# | ___ \          | |    |  \/  |                                    
+# | |_/ /__ _ _ __ | | __ | .  . | ___  ___ ___  __ _  __ _  ___  ___ 
+# |    // _` | '_ \| |/ / | |\/| |/ _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+# | |\ \ (_| | | | |   <  | |  | |  __/\__ \__ \ (_| | (_| |  __/\__ \
+# \_| \_\__,_|_| |_|_|\_\ \_|  |_/\___||___/___/\__,_|\__, |\___||___/
+#                                                     __/ |          
+#                                                   |___/           
+
+# If a user has a permission here, then do NOT send the default welcome message found in the config.yml file.
+
+ranks:
+  'Owner':
+    permission: joinrank.owner
+    joinMessage:
+      actions:
+        - '[MESSAGE] <n><green>%player_name%</green> <gray>has joined the server</gray><n>'
+        - '[SOUND] BLOCK_ANVIL_BREAK'
+        - '[FIREWORK] fireworkPreset1'
+        - '[LIGHTNING]' # If this is listed, the player will get struck by lightning. (No damage)
+        - '[PARTICLE] ASH'
+    leaveMessage:
+      actions:
+        - '[MESSAGE] <n><red>%player_name%</red> <gray>has left the server</gray><n>'
+        - '[SOUND] BLOCK_ANVIL_BREAK'
